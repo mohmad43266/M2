@@ -19,17 +19,17 @@ Almunharif_arab_countries_1A = {
     15: ("SA", "السعودية"),
     16: ("SD", "السودان"),
     17: ("SY", "سوريا"),
-    18: ("TN", "تونس")
-    19: ("TN", "ليبيا")
+    18: ("TN", "تونس"), 
+    19: ("LY", "ليبيا"),
 }
 
 print("اختر الدولة:")
-os.system('clear')
+os.system('cls' if os.name == 'nt' else 'clear') 
 for Almunharif_num_X9, (Almunharif_code_Z6, Almunharif_country_Q2) in Almunharif_arab_countries_1A.items():
     print(f"{Almunharif_num_X9}: {Almunharif_country_Q2}")
 
 Almunharif_country_num_Y4 = int(input("أدخل رقم الدولة من القائمة أعلاه: "))
-os.system('clear')
+os.system('cls' if os.name == 'nt' else 'clear') 
 
 if Almunharif_country_num_Y4 not in Almunharif_arab_countries_1A:
     print("رقم الدولة غير صحيح!")
@@ -38,10 +38,10 @@ else:
     print(f"تم اختيار الدولة: {Almunharif_country_name_4D}")
 
     Almunharif_email_H9 = input("أدخل البريد الإلكتروني: ")
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear') 
 
     Almunharif_phone_number_L7 = input("أدخل رقم الهاتف: ")
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')  
 
     Almunharif_url_T8 = 'https://www.whatsapp.com/contact/noclient/async/new/'
     Almunharif_headers_F1 = {
